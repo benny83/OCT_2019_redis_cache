@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: caritas
+  timeout: 5000
+
+development:
+  <<: *default
+  database: task4_dev
+  host: localhost
+
+production:
+  <<: *default
+  database: task4_prod
