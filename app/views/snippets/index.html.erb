@@ -1,0 +1,8 @@
+<h1><%= snippets.count %> Snippets</h1>
+<div class="panel panel-default">
+  <ul class="list-group">
+    <% snippets.each do |snippet| %>
+      <%= active_snippet?(snippet) %>
+    <% end %>
+  </ul>
+</div>
